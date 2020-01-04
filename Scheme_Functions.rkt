@@ -10,7 +10,6 @@
                 (poly_addition (cdr apol) (cdr bpol))))))
 
 ;Addition Function
-;Developed in class
 (define (adder apol bpol)
   ;Check if apol is null
   (if (null? apol)
@@ -32,7 +31,6 @@
                 (poly_subtract (cdr apol) (cdr bpol))))))
 
 ;Subtraction Function
-;Developed in class
 (define (subtractor apol bpol)
   ;Check if apol is null
   (if (null? apol)
@@ -45,7 +43,6 @@
           (cons (- (car apol)(car bpol))(subtractor (cdr apol)(cdr bpol))))))
 
 ;Multiplier function that multiples apol by individual numbers in bpol
-;Developed in class
 (define (multiplier apol n)
   (if (null? apol)
       apol
